@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        /* Shine */
+.hover14 figure {
+	position: relative;
+}
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover14 figure:hover::before {
+	-webkit-animation: shine .599s;
+	animation: shine .99s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+    </style> -->
+    <!-- <style>
+        .box {
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .shadow-5 {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+                0 2px 2px rgba(0, 0, 0, 0.12),
+                0 4px 4px rgba(0, 0, 0, 0.12),
+                0 8px 8px rgba(0, 0, 0, 0.12),
+                0 16px 16px rgba(0, 0, 0, 0.12);
+        }
+    </style> -->
+    <style>
+        /* h1,
+        h1+p {
+            margin: 30px 15px 0;
+            font-weight: 300;
+        }
+
+        h1+p a {
+            color: #333;
+        }
+
+        h1+p a:hover {
+            text-decoration: none;
+        } */
+
+        /* h2 {
+            margin: 60px 15px 0;
+            padding: 0;
+            font-weight: 300;
+        }
+
+        h2 span {
+            margin-left: 1em;
+            color: #aaa;
+            font-size: 85%;
+        } */
+
+        /* .column {
+            margin: 15px 15px 0;
+            padding: 0;
+        }
+
+        .column:last-child {
+            padding-bottom: 60px;
+        }
+
+        .column::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .column div {
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 200px;
+            margin: 0 0 0 25px;
+            padding: 0;
+        }
+
+        .column div:first-child {
+            margin-left: 0;
+        } */
+
+        .column div span {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            z-index: -1;
+            display: block;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            opacity: 0;
+        }
+
+        figure {
+            width: 300px;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        figure:hover+span {
+            bottom: -36px;
+            opacity: 1;
+        }
+
+
+
+
+
+
+        /* @-webkit-keyframes flash {
+            0% {
+                opacity: .4;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes flash {
+            0% {
+                opacity: .4;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        } */
+
+        /* Shine */
+        .hover14 figure {
+            position: relative;
+        }
+
+        .hover14 figure::before {
+            position: absolute;
+            top: 0;
+            left: -75%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+
+        .hover14 figure:hover::before {
+            -webkit-animation: shine .10s;
+            animation: shine .90s;
+        }
+
+        @-webkit-keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+
+        @keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+
+
+
+
+        @-webkit-keyframes circle {
+            0% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            100% {
+                width: 200%;
+                height: 200%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            100% {
+                width: 200%;
+                height: 200%;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h2 id="demo14">14. Shine</h2>
+<div class="hover14 column">
+  <div>
+    <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
+    <span>Hover</span>
+  </div>
+  <div>
+    <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
+    <span>Hover</span>
+  </div>
+  <div>
+    <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
+    <span>Hover</span>
+  </div>
+</div> -->
+    <!-- <div>
+        <div class="square shadow-5">Shadow 5</div>
+    </div> -->
+    <!-- <h2 id="demo14">14. Shine</h2> -->
+    <div class="hover14 column">
+        <div>
+            <figure><img src="assets/img/new photos/Pharmacy Management System.png" /></figure>
+            <!-- <span>Hover</span> -->
+        </div>
+        
+    </div>
+</body>
+
+</html>
+
+<!-- https://codepen.io/nxworld/pen/ZYNOBZ -->
